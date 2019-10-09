@@ -1,1 +1,1 @@
-# Petrichor2020_Website
+# Petrichor2020_Website, IIT Palakkad
