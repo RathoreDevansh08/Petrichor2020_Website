@@ -18,16 +18,14 @@
     <link href="css/animate.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-    <!--<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>-->
-    <!--<link href="css/ParticlesBg.css" rel="stylesheet" />
-       <script src="js/Particles.js"></script>-->
+   
    	<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
    	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700,900&display=swap" rel="stylesheet">
 
     
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
-	    
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
@@ -35,8 +33,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">-->
+   
     <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Special+Elite" rel="stylesheet">
 
@@ -96,6 +93,7 @@
             overflow: scroll; /* Enable scroll if needed */
             background-color: rgb(0,0,0); /* Fallback color */
             background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+
         }
         /* Modal Content */
         .modal-content {
@@ -108,6 +106,8 @@
             width: 70%;
             height: 80vh;
   		overflow: scroll;
+            background-image: url(./assets/images/modalbulb.jpg);  
+            background-size: cover ;		
         }
        
         /* The Close Button */
@@ -235,6 +235,8 @@
 	      .tu1 h1{
       		font-family: Potra ; 
       		font-size: 7em;
+      		text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #fff, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+      		margin-top: -5px ;
       	}
 	      
 	      @media (max-width: 640px)
@@ -242,6 +244,7 @@
 	      	.tu1 h1{
 	      		font-family: Potra ; 
 	      		font-size: 4em;
+	      		text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #fff, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
 	      	}
 	      	
 	      	.tu1 ul li a{
@@ -249,7 +252,7 @@
 			  color:#000;
 			  background:#ffc;
 			  display:block;
-			  height:5em;
+			  height:18em;
 			  width:18em;
 			  padding:1em;
 			  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
@@ -266,6 +269,7 @@
                 text-decoration: none;
                 cursor: pointer;
             }
+            
 	      	
 	      }
 		      
@@ -292,74 +296,54 @@
     </style>
 </head>
 <body  style="display:inline-block">
-   <!-- <svg class="hidden">
-        <symbol id="icon-cross" viewBox="0 0 24 23">
-            <title>cross</title>
-            <path d="M23.865 3.677c.197-.383.164-.818-.008-1.18.048-.41-.06-.827-.448-1.147L22.323.457c-.636-.524-1.632-.689-2.25 0a155.348 155.348 0 0 1-8.797 9.001C9.011 7.342 6.72 5.255 4.443 3.165c-.8-.734-1.956-.503-2.458.37C1.253 3.9.659 4.374.168 5.182c-.233.386-.215.872 0 1.258 1.47 2.635 4.31 4.951 6.646 7.083-.313.28-.623.562-.942.836-3.146 2.702-5.268 4.416-1.331 7.187.053.037.107.029.161.05.076.036.148.06.232.074.026 0 .05.005.075.003.082.007.16.027.243.011 2.117-.415 4.085-2.074 5.872-3.9 1.74 1.715 3.592 3.353 5.63 4.325.485.232 1.063.097 1.436-.227.626.047 1.197-.342 1.484-.901.042-.026.07-.041.116-.07.91-.569.993-1.701.32-2.482-1.522-1.762-3.138-3.438-4.787-5.084 2.968-2.9 6.674-6.027 8.542-9.667z" />
-        </symbol>
-    </svg> -->
+  
     <main style="width:100vw">
             
         <div class="content" style=" background-repeat:no-repeat; min-height:100vh ; background-color: #222222" id="tu">
-        
-        
-       
-
-            <!--            <div style="width:60%; margin-top:000px; float:left;text-align:center">
-                 <a href="../index.html"><img src="img/%20logo%20dark%20bg%20horizontal.png" style="height:100px;width:auto;float:left;margin-top:0px;margin-left:0vh;"  /></a>
-                <img src="img/121 - Copy.png" style="max-width:80%;max-height:100vh;float:left; height:auto;margin-left:0%; margin-top:0px; z-index:0;margin-left:10%" />
-            </div>-->
-            <!--<img src="img/121 - Copy.png" style="max-width:150vh;float:left; height:auto; position:absolute;margin-left:0%; margin-top:0px; z-index:0" />-->
-            <!--<picture style="margin-top:0px">
-                <source srcset="img/121.png" media="(min-width: 600px)">
-                <source srcset="img/121_mob.png" media="(min-width: 100px)">
-                <img src="img/121.png" style="max-width:150vh;float:left; height:auto; position:absolute;margin-left:0%; margin-top:0px; z-index:0" />
-            </picture>-->
-
-           <!-- <img src="https://i.imgur.com/k9RWyNJ.png" id="pink_g" style="max-width:150vh;float:left; height:auto; position:absolute;margin-left:0%; margin-top:0px; z-index:0" /> -->
+      
            
             <div class="tu1" id="tu1" >
             
             	 <div class="text">
                     <h1>Technical Events</h1>
-        		 </div>
+        		</div>
 
             
 		  <ul>    
 		    <li>
-			<a href="#robo">
+			<a href="#robo" style="background-image: url(./assets/images/ROBOTIC.jpg); background-size: 100% 100%;">
 			 <!-- <h2>Robotics</h2> -->
-			  <p>Robotics</p>
+			 
 			</a>
 		    </li>
 		    <li>
-			<a href="#inno">
+			<a href="#inno" style="background-image: url(./assets/images/INNOVATIONHUNT.jpeg); background-size: 100% 100%;">
 			 <!-- <h2>Innovation Hunt</h2> -->
-			  <p>Innovation Hunt</p>
+			  
 			</a>
 		    </li>
 		    <li>
-			<a href="#civi">
+			<a href="#civi" style="background-image: url(./assets/images/CIVIL2.jpg); background-size: 100% 100%;">
 			  <!-- <h2>Civil</h2> -->
-			  <p>Civil</p>
+			  
 			</a>
 		    </li>
 		    <li>
-			<a href="#comp">
+			<a href="#comp" style="background-image: url(./assets/images/COMPUTERSCIENCE.jpeg); background-size: 100% 100%;">
 			  <!-- <h2>Computer Science</h2> -->
-			  <p>Computer Science</p>
+			  
 			</a>
 		    </li>
 		    <li>
-			<a href="#mech">
+			<a href="#mech" style="background-image: url(./assets/images/MECHANICAL.jpeg); background-size: 100% 100%;">
 			<!--  <h2>Mechanical</h2> -->
-			  <p>Mechanical</p>
+			  
 			</a>
 		    </li>
 		    <li>
-			<a href="#chem">
+			<a href="#chem" style="background-image: url(./assets/images/CHEMISTRY.jpeg); background-size: 100% 100%;">
 			  <!-- <h2>Chemistry</h2> -->
-			  <p>Chemistry</p>
+			  
 			</a>
 		    </li>
 		   <!-- <li>
@@ -369,15 +353,15 @@
 			</a>
 		    </li> -->
 		    <li>
-			<a href="#elec">
+			<a href="#elec" style="background-image: url(./assets/images/ELEC.jpg); background-size: 100% 100%;">
 			 <!-- <h2>Electrical</h2> -->
-			  <p>Electrical</p>
+			  
 			</a>
 		    </li>
 		    <li>
-			<a href="#tech">
+			<a href="#tech" style="background-image: url(./assets/images/TECHEXPO.jpeg); background-size: 100% 100%;">
 			  <!-- <h2>TechEXPO</h2> -->
-			  <p>TechEXPO</p>
+			  
 			</a>
 		    </li>
 		    <!-- <li>
@@ -390,69 +374,27 @@
 		 </div>
            
            
-           <!--
-            <a href="../index.html"><img src="./assets/images/logo.png" style=" filter: saturate(1.5); height:1000px; width:600px;float:left;margin-top:-500px;position:absolute;margin-left:100px;" /></a>
-            <div id="menu_main" style="margin-left:60%; margin-top:000px">
-                <nav class="menu menu--yona" style="margin-left:0%; width:40vw;">
-                    <a class="menu__item" href="#robo">
-                        <span style="color: #000000;" class="menu__item-name">Robotics</span>
-                        <span style="color: #b38012; font-size: 1.0em;" class=" animated lightSpeedIn menu__item-label">Every song has a colour!</span>
-                    </a>
-                    <a class="menu__item" href="#inno">
-                        <span style="color: #000000;" class="menu__item-name">Innovation Hunt</span>
-                        <span style="color: #b38012; font-size: 1.0em" class=" animated lightSpeedIn menu__item-label">They call it dancing. We call it living!</span>
-                    </a>
-                    <a class="menu__item" href="#civi">
-                        <span style="color: #000000;" class="menu__item-name">Civil</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">What is drama but life with the dull bits cut out!</span>
-                    </a>
-                    <a class="menu__item" href="#comp">
-                        <span style="color: #000000;" class="menu__item-name">Computer Science</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">Poets don't let poets put the pen down!</span>
-                    </a>
-                    <a class="menu__item" href="#mech">
-                        <span style="color: #000000;" class="menu__item-name">Mechanical</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">When in doubt, wear your color!</span>
-                    </a>
-                    
-                    <a class="menu__item" href="#chem">
-                        <span style="color: #000000;" class="menu__item-name">Chemistry</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">Taking the fun to digital Town Square!</span>
-                    </a>
-                    
-                    <a class="menu__item" href="#trea">
-                        <span style="color: #000000;" class="menu__item-name">Treasure Hunt</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">Taking the fun to digital Town Square!</span></a>
-                   <a class="menu__item" href="#elec">
-                        <span style="color: #000000;" class="menu__item-name">Electrical</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">Because main events are too mainstream!</span>
-                    </a>
-                    <a class="menu__item" href="#tech">
-                        <span style="color: #000000;" class="menu__item-name">TechExpo</span>
-                        <span style="color: #b38012; font-size: 1.0em" class="animated lightSpeedIn menu__item-label">Because main events are too mainstream!</span>
-                    </a>
-                </nav>
-            </div>  -->
+        
         </div>
         <section id="Events" style="background-color: #011524;">
             <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">
                 <img src="./assets/images/7645.png" style="width:20px;height:auto" />
             </button> -->
             <a href="#tu">
-            <button id="myBtn" title="Go to top">
-                <img src="./assets/images/7645.png" style="width:20px;height:auto" />
-            </button>
+		      <button id="myBtn" title="Go to top">
+		          <img src="./assets/images/7645.png" style="width:20px;height:auto" />
+		      </button>
             </a>
             <!--Robotics thumbnails Start-->
             
-            
+            <br><br><br>
                 
                 <div id="robo">
-                <div class="text">
-                    <a href="#0" class="neoned" data-line="Music">Robotics</a>
+		          <div class="text">
+		              <a href="#0" class="neoned" data-line="Music">Robotics</a>
+		          </div>
                 </div>
-            </div>
- <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px"></div>
+ 
 		<div class="content">
                 <div class="grid">
                                 
@@ -460,18 +402,18 @@
                     <a class="grid__item" href="#preview-genesis" onclick="clicky_dge()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/robowar.jpg" alt="Some image" />
                        <!-- <h3 class="box__title"> <span class="box__title-inner-m" data-hover="ROBO WARS"> ROBO WARS</span></h3> -->
-                           <p class="box__content" style=" color: #FD7327; color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">"ROBO WARS"</p> 
+                           <p class="box__content" style=" color: #FD7327; color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">"Clash of Droids"</p> <!-- ROBO WARS -->
                         </div>
                     </a>
                     <a class="grid__item" href="#preview-footloose" onclick="clicky_df()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/mazesolver.jpg" alt="Some image" />
                           <!--   <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="MAZE SOLVER">MAZE SOLVER</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">
-                                "MAZE SOLVER"
+                                "Maze Runner"  <!-- MAZE SOLVER -->
                             </p>
                         </div>
 
@@ -479,55 +421,49 @@
                     <a class="grid__item" href="#preview-justduet" onclick="clicky_dj()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/lena.jpg" alt="Some image" />
                          <!--    <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="IMAGE PROCESSING AND OBSTACLE DETECTION">IMAGE PROCESSING AND OBSTACLE DETECTION</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"IMAGE PROCESSING AND OBSTACLE DETECTION"</p>
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"IPOD"</p>
                         </div>
                     </a>
-                    
+                    <a class="grid__item" href="#preview-justduet" onclick="clicky_mn()">
+                        <div class="box">
+                            
+                            <img class="box__img" src="./assets/images/walle3000.jpg" alt="Some image" />
+                         <!--    <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="IMAGE PROCESSING AND OBSTACLE DETECTION">IMAGE PROCESSING AND OBSTACLE DETECTION</span></h3> -->
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Wall-E 3000"</p>
+                        </div>
+                    </a>
+                    <a class="grid__item" href="#preview-justduet" onclick="clicky_it()">
+                        <div class="box">
+                            
+                            <img class="box__img" src="./assets/images/robogames01.jpg" alt="Some image" />
+                         <!--    <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="IMAGE PROCESSING AND OBSTACLE DETECTION">IMAGE PROCESSING AND OBSTACLE DETECTION</span></h3> -->
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"roboplay"</p>
+                        </div>
+                    </a>
+                   <!-- 
                     <a class="grid__item" href="#preview-justduet" onclick="clicky_dg()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/mazesolver.jpg" alt="Some image" /> -->
                            <!--  <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="ROBO GAMES">ROBO GAMES</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"ROBO GAMES"</p>
+                      <!--      <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"ROBO GAMES"</p>
                         </div>
-                    </a>
+                    </a> -->
                     </div>
                     </div>
-                   <!-- <a class="grid__item" href="#preview-gss" onclick="clicky_dg()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
-                            <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="Get Set Solo">Get Set Solo</span></h3>
-                            <!--<h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">Rust</span></h4>--> 
-                        <!--    <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Dream solo, love solo, dance solo."</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-wos" onclick="clicky_dw()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="War of Superstars">War of Superstars</span></h3>
-                            <!-- <h4 class="box__text"><span class="box__text-inner title_event">Beast</span></h4>-->
-                            <!-- <div class="box__deco">&#10014;</div>-->
-                         <!--   <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Shine bright like your favourite superstar!"</p>
-                        </div>
-                    </a>-->
-                    <a class="grid__item" href="#0">
-                        <div class="box">
-                        </div>
-                    </a>
+                   
+                   
                     <!--Robotics thumbnails end-->
                     <!--Innovation Hunt thumbnail Starts-->
-                    <br><br><br><br>
+                
                     <div id="inno">
                         <div class="text">
                             <a href="#0" class="neoned" data-line="Dance">Innovation Hunt</a>
                         </div>
                     </div>
-                  <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                 
                  <div class="content">
                 <div class="grid">
                     
@@ -535,7 +471,7 @@
                     <a class="grid__item" href="#preview-brock" onclick="clicky_mbr()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/KERALACHALLENGE.jpg" alt="Some image" />
                          <!--   <h3 class="box__title"><span class="box__title-inner-m" data-hover="KERALA CHALLENGE">KERALA CHALLENGE</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"KERALA CHALLENGE"</p>
                         </div>
@@ -543,7 +479,7 @@
                     <a class="grid__item" href="#preview-brock" onclick="clicky_ma()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/ss.png" alt="Some image" />
 <!--                            <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="STARTUP SHOWCASE">STARTUP SHOWCASE</span></h3> -->
                             
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"STARTUP SHOWCASE"</p>
@@ -552,45 +488,32 @@
                     <a class="grid__item" href="#preview-btuned" onclick="clicky_mb()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&w=1000&q=80" alt="Some image" />
+                            <img class="box__img" src="./assets/images/IDEATHRON.jpg" alt="Some image" />
                          <!--   <h3 class="box__title"><span class="box__title-inner-m" data-hover="IDEATHRON">IDEATHRON</span></h3> -->
                             <!--<h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">Rust</span></h4>-->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"IDEATHRON"</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-nworthy" onclick="clicky_mn()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://images.unsplash.com/photo-1499415479124-43c32433a620?ixlib=rb-1.2.1&w=1000&q=80" alt="Some image" />
-<!--                            <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="SOCIALPRENEUR">SOCIALPRENEUR</span></h3> -->
-                            <!--<h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">Rust</span></h4>-->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"SOCIALPRENEUR"</p>
-                        </div>
-                    </a>
-                    
-                    </div></div>
-                    
-                    <a class="grid__item" href="#0">
-                        <div class="box">
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"IDEATHON"</p>
                         </div>
                     </a>
                   
+                    </div>
+                    </div>
+                    
+                    
                     <!--Drama Start-->
-                    <br><br><br><br><br>
+                    
                     <div id="civi">
                         <div class="text">
                             <a href="#0" class="neoned" data-line="Speaking">Civil</a>
                         </div>
                     </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                   
                     <div class="content">
                 <div class="grid">
                     
                     <a class="grid__item" href="#preview-nn" onclick="clicky_dn()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://cdn.hipwallpaper.com/i/61/71/RehjE5.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/retrofitting.jpg" alt="Some image" />
                            <!-- <h3 class="box__title"><span class="box__title-inner-m" data-hover="RETROFITTING">RETROFITTING</span></h3> -->
                             <!-- <h4 class="box__text"><span class="box__text-inner title_event">Beast</span></h4>-->
                             <!-- <div class="box__deco">&#10014;</div>-->
@@ -600,35 +523,27 @@
                     <a class="grid__item" href="#preview-curtain" onclick="clicky_dc()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://cdn.hipwallpaper.com/i/61/71/RehjE5.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/mod_3.jpg" alt="Some image" />
                           <!--  <h3 class="box__title"><span class="box__title-inner-m" data-hover="DESIGNING (MODELLING)">DESIGNING (MODELLING)</span></h3> -->
                             <!-- <h4 class="box__text"><span class="box__text-inner title_event">Beast</span></h4>-->
                             <!-- <div class="box__deco">&#10014;</div>-->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"DESIGNING (MODELLING)"</p>
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"miniature"</p>
                         </div>
                     </a>
                     <a class="grid__item" href="#preview-nrb" onclick="clicky_dr()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://cdn.hipwallpaper.com/i/61/71/RehjE5.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/rivil(1).jpg" alt="Some image" />
                           <!--  <h3 class="box__title"><span class="box__title-inner-m" data-hover="CIVIL SOFTWARE">CIVIL SOFTWARE</span></h3> -->
                             <!-- <h4 class="box__text"><span class="box__text-inner title_event">Beast</span></h4>-->
                             <!-- <div class="box__deco">&#10014;</div>-->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"CIVIL SOFTWARE"</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-tut" onclick="clicky_dt()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://cdn.hipwallpaper.com/i/61/71/RehjE5.jpg" alt="Some image" />
-<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="HYDRAULIC ARM MAKING">HYDRAULIC ARM MAKING</span></h3> -->
-                            <!-- <h4 class="box__text"><span class="box__text-inner title_event">Beast</span></h4>-->
-                            <!-- <div class="box__deco">&#10014;</div>-->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"HYDRAULIC ARM MAKING"</p>
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"rivil it"</p>
                         </div>
                     </a>
                     
-                    </div></div>
+                    
+                    </div>
+                    </div>
                     <!--Speaking end-->
                     <!--Writing Start-->
                     <div id="comp">
@@ -636,24 +551,23 @@
                             <a href="#0" class="neoned" data-line="Writing">Computer Science</a>
                         </div>
                     </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                    
                     <div class="content">
                 <div class="grid">
                     
                     <a class="grid__item" href="#preview-mamu" onclick="clicky_im()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/PUZZLESOLVINGAI.jpg" alt="Some image" />
 <!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="PUZZLE SOLVING WITH AI">PUZZLE SOLVING WITH AI</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"PUZZLE SOLVING WITH AI"</p>
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Veni-vidi-vici"</p>
                         </div>
                     </a>
 
                     <a class="grid__item" href="#preview-chef" onclick="clicky_ic()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/CP.jpg" alt="Some image" />
 <!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="COMPETITIVE CODING">COMPETITIVE CODING</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"COMPETITIVE CODING"</p>
                         </div>
@@ -662,13 +576,24 @@
                     <a class="grid__item" href="#preview-ims" onclick="clicky_ii()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/CAPTURETHEFLAG.jpg" alt="Some image" />
 <!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="CAPTURE THE FLAG">CAPTURE THE FLAG</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">"CAPTURE THE FLAG"</p>
                         </div>
                     </a>
                     
-                    </div></div>
+                     
+                    <a class="grid__item" href="#preview-justduet" onclick="clicky_dg()">
+                        <div class="box">
+                            
+                            <img class="box__img" src="./assets/images/dataAna.jpg" alt="Some image" />
+                           <!--  <h3 class="box__title box__title--bottom"><span class="box__title-inner-m" data-hover="ROBO GAMES">ROBO GAMES</span></h3> -->
+                          <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">"DATA ANALYTICS"</p>
+                        </div>
+                    </a> 
+                    
+                    </div>
+                    </div>
                    
                    <!-- <a class="grid__item" href="#preview-gou" onclick="clicky_ig()">
                         <div class="box">
@@ -720,14 +645,7 @@
 
                     <!--FASHION BEGINS -->
                     
-                    
-                    
-                     
-                    
-                    
-                    
-                    
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             
                     
                     <!-- Mechanical -->
                     <div id="mech">
@@ -735,46 +653,33 @@
                             <a href="#0" class="neoned" data-line="Writing">Mechanical</a>
                         </div>
                     </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                    
                     <div class="content">
                 <div class="grid">
                     
                     <a class="grid__item" href="#preview-mamu" onclick="clicky_iu()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/rcic.jpg" alt="Some image" />
                            <!-- <h3 class="box__title"><span class="box__title-inner-m" data-hover="RC IC ENGINE NITRO RALLY">RC IC ENGINE NITRO RALLY</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"RC IC ENGINE NITRO RALLY"</p>
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Lightning McQueen"</p>
                         </div>
                     </a>
 
                     <a class="grid__item" href="#preview-chef" onclick="clicky_ib()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/PIRATEBATTLE.jpg" alt="Some image" />
                         <!--    <h3 class="box__title"><span class="box__title-inner-m" data-hover="PIRATE BATTLE">PIRATE BATTLE</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"PIRATE BATTLE"</p>
                         </div>
                     </a>
 
-                    <a class="grid__item" href="#preview-ims" onclick="clicky_it()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
-<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="DRONESHIP">DRONESHIP</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700; ">"DRONESHIP"</p>
-                        </div>
-                    </a>
+                    
                     
                     </div></div>
                     
-                    
-                    
-                  
-                    
-                    
-                     <br><br><br><br><br><br>
+        
                     <!-- chemistry begins-->
 				
 				 <div id="chem">
@@ -782,275 +687,68 @@
                             <a href="#0" class="neoned" data-line="Writing">Chemistry</a>
                         </div>
                     </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                   
                     <div class="content">
                 <div class="grid">
                     
                     <a class="grid__item" href="#preview-mamu" onclick="clicky_if()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/chem'.jpg" alt="Some image" />
 <!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="WESTERN GHATS">WESTERN GHATS</span></h3> -->
-                          <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"WESTERN GHATS"</p>
+                          <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"chemistry"</p>
                         </div>
                     </a>
 
 			</div></div>
-                    <br><br><br><br><br><br>
-			<!-- physics begins-->
-			<!--	
-				 <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px" id="phys">
-                        <div class="text">
-                            <a href="#0" class="neon" data-line="Writing">Physics</a>
-                        </div>
-                    </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <a class="grid__item" href="#preview-mamu" onclick="clicky_im()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Coming Soon...">Coming Soon...</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Twist the End"</p>
-                        </div>
-                    </a>
-                    -->
-                    <!-- techexpo begins-->
-			<!--	
-				 <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px" id="tech">
-                        <div class="text">
-                            <a href="#0" class="neon" data-line="Writing">TechEXPO</a>
-                        </div>
-                    </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <a class="grid__item" href="#preview-mamu" onclick="clicky_im()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Exhibition">Exhibition</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"Twist the End"</p>
-                        </div>
-                    </a> 
-                     -->              
-                     <!-- treasurehunt begins-->
-				<!--
-				 <div id="trea">
-                        <div class="text">
-                            <a href="#0" class="neoned" data-line="Writing">Treasure Hunt</a>
-                        </div>
-                    </div>
-                     <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <div class="content">
-                <div class="grid">
-                   
-                    <a class="grid__item" href="#preview-mamu" onclick="clicky_lw()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" /> -->
-<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="TREASURE HUNT">TREASURE HUNT</span></h3> -->
-                           <!-- <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"TREASURE HUNT"</p>
-                        </div>
-                    </a>
-			</div></div>
-
-			 <br><br><br><br><br><br> -->
-                    <!-- electrical begins-->
+          
 			<div id="elec">
                         <div class="text">
                             <a href="#0" class="neoned" data-line="Writing">Electrical</a>
                         </div>
                     </div>
-                     <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
+                    
                     <div class="content">
                 <div class="grid">
                    
                     <a class="grid__item" href="#preview-mamu" onclick="clicky_lc()">
                         <div class="box">
                             
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
+                            <img class="box__img" src="./assets/images/quiz.jpg" alt="Some image" />
 <!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="RECRAFT">RECRAFT</span></h3> -->
                             <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"RECRAFT"</p>
                         </div>
                     </a>
+                    <a class="grid__item" href="#preview-mamu" onclick="clicky_lc1()">
+                        <div class="box">
+                            
+                            <img class="box__img" src="./assets/images/solder.jpg" alt="Some image" />
+<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="RECRAFT">RECRAFT</span></h3> -->
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"the solderer"</p>
+                        </div>
+                    </a>
+                    <a class="grid__item" href="#preview-mamu" onclick="clicky_lc2()">
+                        <div class="box">
+                            
+                            <img class="box__img" src="./assets/images/coding.jpg" alt="Some image" />
+<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="RECRAFT">RECRAFT</span></h3> -->
+                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"VCC"</p>
+                        </div>
+                    </a>
 			</div></div>
-<br><br><br><br><br><br>
+			
+		
 			  <!-- techexpo begins -->
 			  <div id="tech">
                         <div class="text">
                             <a href="#0" class="neoned" data-line="Writing">TechExpo</a>
                         </div>
-                    </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <div class="content">
-                <div class="grid">
-                    
-                    <a class="grid__item" href="#preview-chef" onclick="clicky_ld()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="https://img1.goodfon.com/wallpaper/nbig/4/da/art-samolet-lockheed-u-2r.jpg" alt="Some image" />
-<!--                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="TECHEXPO">TECHEXPO</span></h3> -->
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"TECHEXPO"</p>
-                        </div>
-                    </a>
-                    
-                                
-                   
-                            <!--<img class="box__img" src="img/Fashion%20and%20Fine%20Arts/ThriftyThreads.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Thrifty Threads">Thrifty Threads</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Low on budget but high on ambition, come prove that frugality doesnt hamper creativity with your visionary outfit designs and skills!!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#0">
-                        <div class="box">
-                        </div>
-                    </a>
-                    <!--FASHION ENDS-->
-                    <!--LITS BEGINS
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px" id="Lits">
-                        <div class="text" >
-                            <a href="#0" class="neon" data-line="Lits and Quizzes">Lits and Quizzes</a>
-                        </div>
-                    </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <a class="grid__item" href="#preview-kk" onclick="clicky_lk()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/kissa%20kaviyon%20ka%201.JPG" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Kissa Kaviyon Ka">Kissa Kaviyon Ka</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“The stage is your canvas, the words your color and the rhyme your paintbrush!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-quiz" onclick="clicky_lu()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/ quiz 2.jpeg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover=" Quiz"> Quiz</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“To be fast or to be smart (or maybe both), that is the question!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-gse" onclick="clicky_lg()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/Get Sp-ent 1.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Get Sp-Ent !">Get Sp-Ent !</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Put your best foot forward & give your best shot ever ! ”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-jam" onclick="clicky_lj()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/JAM 2.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="JAM">JAM</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“You've got a minute: take it, craft it, win it!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-tow" onclick="clicky_lt()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/tug of words 1.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Tug-of-words">Tug-of-words</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Trip on words while you balance the phrase”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-action" onclick="clicky_la()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/kissa kaviyon ka 2.jpeg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Action Packed ">Action Packed </span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Chatter chatter all around, not a word to speak! ”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-ddd" onclick="clicky_ld()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/Defend De-bait 1.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Defend De-bait">Defend De-bait</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Toss your words: Heads you rebut, tails you refute!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-spin" onclick="clicky_lc()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/Classic Spinoff 1.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Classic Spin-offs">Classic Spin-offs</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Create a story you believe should exist!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-writersun" onclick="clicky_lw()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Lits%20and%20Quizzes/Writers Unblocked 1.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Writers Unblocked">Writers Unblocked</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Spin the yarn as you go along !”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-kk">
-                        <div class="box">
-                        </div>
-                    </a>
-                    <!--LITS ENDS-->
-                    <!--ONLINE STARTS
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px" id="Online">
-                        <div class="text">
-                            <a href="#0" class="neon" data-line="Online Events">Online Events</a>
-                        </div>
-                    </div>
-                    <div style="width:100vw; margin-left:-6vw; padding-bottom: 100px">
-                    </div>
-                    <a class="grid__item" href="#preview-kk" onclick="clicky_os()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/Shutter Story.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Shutter Story">Shutter Story</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“The camera captures what it looks like, you write what it feels like.”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-quiz" onclick="clicky_oso()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/Sole Shade.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Sole Shade">Sole Shade</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“The world has infinite colours but only one shall stand out!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-gse" onclick="clicky_oa()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/Alpha-hues.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Alpha Hues">Alpha Hues</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“Solve the chaos of alphabets to make the order of colours.”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-jam" onclick="clicky_oc()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/color_pop.jpg" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Colour Pop">Colour Pop</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“It's all about coloring your life in the colors of pop!”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-tow" onclick="clicky_ow()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/Word2Word3.png" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Word to Word">Word to Word</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“What's in the language anyways?”</p>
-                        </div>
-                    </a>
-                    <a class="grid__item" href="#preview-action" onclick="clicky_ov()">
-                        <div class="box">
-                            
-                            <img class="box__img" src="img/Online/Virtual expedition .PNG" alt="Some image" />
-                            <h3 class="box__title"><span class="box__title-inner-m" data-hover="Virtual Expedition">Virtual Expedition</span></h3>
-                            <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">“No locks and keys, yet a treasure waits to be unlocked!”</p>
-                        </div>
-                    </a>
+                    </div><br>
+                    <a class="grid__item" href="/coming_soon">
+                    <div class="box">
+                    <p class="box__content" style="color: #FD7327; font-family: 'Amatic SC', cursive; font-weight: 700;">"TECHEXPO"</p>
+                    </div></a><br><br><br>
+               
                     <!--ONLINE ENDS-->
                 </div>
             </div>
@@ -1063,7 +761,7 @@
                     <div style="width:40%;float:left;" class="event_info">
                         <!--<div class="box" style="width:40%">
                             
-                            <img class="box__img box__img--original" src="img/Music/Pitch Please!.png" alt="Some image" />
+                            <img class="box__img box__img--original" src="" alt="Some image" />
                             <h3 class="box__title"><span class="box__title-inner-m">Pitch Please!</span></h3>
                             <a href="#0" style="z-index:10000"><h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4></a>
                             <div class="box__deco">&#10014;</div>
@@ -1072,25 +770,7 @@
 
                     <div style="width:60%;float:right;">
                         <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0">
-                            <!--<div class="w3-bar w3-black" style="font-size:small">
-                                <button class="w3-bar-item w3-button" onclick="openCity('London1',this)">Description</button>
-                                <button class="w3-bar-item w3-button" onclick="openCity('Paris1',this)">Rules</button>
-                                <button class="w3-bar-item w3-button" onclick="openCity('Tokyo1',this)">Shortlisting</button>
-                            </div>
-                            <div id="London1" class="w3-container city" style="overflow: auto; height:60vh">
-                                <p>London is the capital city of England.</p>
-
-                            </div>
-
-                            <div id="Paris1" class="w3-container city" style="display:none; overflow: auto; height:60vh">
-                                <h2>Paris</h2>
-                                <p>Paris is the capital of France.</p>
-                            </div>
-
-                            <div id="Tokyo1" class="w3-container city" style="display:none; overflow: auto; height:60vh">
-                                <h2>Tokyo</h2>
-                                <p>Tokyo is the capital of Japan.</p>
-                            </div>-->
+                         
                         </div>
 
                         <!--<p class="overlay__content" style="font-size: 1em;width:100%">
@@ -1116,51 +796,49 @@
    
             <!-- Modal content Petrichor-->
             <!-- Robowars -->
-          
+          <br>
             <div class="modal-content" >
+            <br><br>
                 <span class="close" onclick="closey_dge()" >&times;</span>
                 
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; border: #ffffff;">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #00ffff; border: #ffffff;">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #00ffff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div></a>
-                    <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br />
+                            <br />
+                            <br /> Event Date: 18 January, 2020 
+                            <br /> Contact Details: 
+                        
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 
-                
+                <br><br>
                 <div style="width:100%;">
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
+                        <div id="Londondge" class="w3-container city" style="color: #ffffff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
                             	<br>
                                 Are you a fan of the Transformers? Are you taken by the idea of autobots trying to save the world? Here is your chance to witness and be a part of the ultimate battle of autobots!!! Petrichor provides the arena for the robots to battle it out and emerge in triumph!
 Let the war begin!!
-<br>
-Specifications:
-<br>
->> Each team must have a wired or wirelessly controlled robot capable of a one on one and trio combat.
-<br>
->> Add others……
+
 
                             </span>
                        
@@ -1196,15 +874,16 @@ Specifications:
             <!-- Modal content Petrichor-->
             <!-- Maze Solver -->
             <div class="modal-content" >
+            <br><br>
                 <span class="close" onclick="closey_df()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1212,29 +891,25 @@ Specifications:
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date : 17 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
-                <br>
+                <br><br>
                 <div style="width:100%;">
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-
-                                Can you design a robot that can transverse through a Labyrinth of obstacles and dead ends? Will your bot be able to do so in the shortest time possible? Then here is your chance to put your skills in robotics to test! 
-<br>
-Instructions:
-<br>>> The autonomous bot has to transverse through a Maze in the shortest possible distance following the white lines in round 1 and the black walls in round 2. 
-<br>>> Both the rounds will have two runs- dry run and test run. In the dry run, the bot will have to transverse through the lengths of maze in order to define the shortest path between the starting and end point. In test run, the bot should follow the shortest path possible. 
-<br>>> There can be both 90° and 135° turns in the Maze. The robots will face obstacles in their path as well.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+					<br>
+                              Can you design a robot that can transverse through a Labyrinth of obstacles and dead ends? Perfect designing and fabrication of the robot, along with intelligent use of sensors and coding will see you through the victory. Will your robot be able to do so in the shortest time possible? Then here is your chance to put your skills in robotics to test and build a wireless robot to traverse through a maze with 90°and 135° turns.
 
                             </span>
                        
@@ -1267,16 +942,18 @@ Instructions:
         <div id="myModal_dj" class="modal">
             <!-- Modal content Petrichor-->
             <!-- image processing -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_dj()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1284,26 +961,27 @@ Instructions:
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
               
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-
-                                An event where autonomous bots turn the table against each other, IMAGE PROCESSING AND OBSTACLE DETECTION is where only the best of bots can overcome the rigours of the tasks. The event is all about an autonomous bot, judged on its ability to perform usual tasks. 
-Perfect designing and fabrication of the bot, along with intelligent use of sensors and coding will see you through the victory. The ability of the bot to process images and map its environment in its attempt to follow the assigned lane on the arena. Overwhelming hurdles and sharp turns are to be dealt with in the most efficient manner possible.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+				<br>
+                                An event where autonomous bots turn the table against each other. Only the best of robots can overcome the rigours of the tasks. The event is all about an autonomous robot, judged on its ability to come out of a maze and avoid the obstacles. The ability of the robot to process images and map its environment in its attempt to follow the assigned lane on the arena. Overwhelming hurdles and sharp turns are to be dealt with in the most efficient manner possible.
 
                             </span>
                        
@@ -1336,17 +1014,19 @@ Perfect designing and fabrication of the bot, along with intelligent use of sens
         
         <div id="myModal_dg" class="modal">
             <!-- Modal content Petrichor-->
-            <!-- Robogames -->
+            <!-- wall-e 3000 -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_dg()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1354,31 +1034,26 @@ Perfect designing and fabrication of the bot, along with intelligent use of sens
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                            	 
-                                One of its kind robotic competition, Robo Games is where skills meet passion. Divided into four rounds, each round more arduous than the last, the event seeks dexterity that can sail through the tasks.
-This event involves two wired bots coordinating with each other to play and defeat, all at the same time. Each team will be having two robots with them.
-<br>
-The different rounds are as follows: 
-​<br>I)ROBO TABLE TENNIS: In this round, both the bots will coordinate to hit the tennis ball to earn points.
-​<br>II)ROBO SOCCER:  In this round, one of the bots will attempt at scoring goals, while the other will have its defending gloves on.
-​<br>III)ROBO COORDINATION:  In this round, one of the bots has to remove the obstacles coming in the path of the other, and both of them make sure the opponent loses the race.
-<br>IV)MORE COMING SOON….  
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                            	 <br>
+                                If there are keys to freedom from the challenges the industry is currently riddled with, data science is one of them. If you are one of those who can wield your knowledge of data science to provide solutions to some of the prominent challenges in the industry, Data analytics hackathon is the event you wouldn't want to miss.
 
                             </span>
                        
@@ -1473,16 +1148,18 @@ The different rounds are as follows:
         <div id="myModal_im" class="modal">
             <!-- Modal content Petrichor-->
             <!-- puzzle solving AI -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_im()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1490,25 +1167,25 @@ The different rounds are as follows:
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                         
-                                From Machine Learning and NLP to Computer Vision, Robotics, and self-driving cars - the field of Artificial Intelligence is tremendously transforming everyday. 
-With such a rapid pace of development, it’s easy to get lost in the jargon and not know the essentials.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                         <br>
+                               From Machine Learning and NLP to Computer Vision, Robotics, and self-driving cars - the field of Artificial Intelligence is tremendously transforming everyday. With such a rapid pace of development, it’s easy to get lost in the jargon and not know the essentials.
 Don’t let AI remain a buzzword for you anymore. Show your mettle and use AI algorithms as a weapon to solve challenging, mind-boggling puzzles.
 
                             </span>
@@ -1543,16 +1220,17 @@ Don’t let AI remain a buzzword for you anymore. Show your mettle and use AI al
         <div id="myModal_ii" class="modal">
             <!-- Modal content Petrichor-->
             <!-- capture the flag -->
-            <div class="modal-content" >
+<br>            <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_ii()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1560,23 +1238,24 @@ Don’t let AI remain a buzzword for you anymore. Show your mettle and use AI al
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Online Event 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
-                <div style="width:100%;">
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                         
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                         <br>
                                 Hack your way to victory while learning paramount cyber security essentials.
 Read between the lines of code and spot vulnerabilities that others don’t or reverse-engineer the source code! 
 The battlefield is open. Go for the flag, don’t you settle! CTF tools and your ingenuity is your arsenal.
@@ -1674,24 +1353,48 @@ The battlefield is open. Go for the flag, don’t you settle! CTF tools and your
         <div id="myModal_if" class="modal">
             <!-- Modal content Petrichor-->
             <!-- western ghats -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_if()">&times;</span>
                 
-                <div style="width:100%;">
+                <div style="width:100%;float:left; color: #DBCF22" class="event_info">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div> </a>
+                    <br>
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div></a>
+                    <br>
+                    <div style="width:100%;float:left;margin-top:-50px">
+                        <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <br>
+                
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                      
-                                Solution to control the Air Pollution at the foothills of western ghats : <br>
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                      <br>
+                                Our world we live in are surrounded by elements of nature and their dynamics. Chemistry is one such subject that aims to understand these dynamics. Science being a way of life gives us a chance to analyse everything in our daily lives with a different perspective.
+Petrichor realising this brings forth few challenging technical problems in chemistry faced by many of us in our daily lives that involve the fundamental concepts of sciences and gives you an opportunity to build an innovative out of the box solution using scientific reasoning. What are you waiting for, let the scientist in you start his/her work
 
-In this growing age of rapid industrialization the world is in imminent danger of something that might just be coined the millenial’s doom. Yes, you read my mind ! Global Warming and rising rates of pollution.  
-
-Palakkad, a prime spot for immense biodiversity also known as the ‘Palghat Gap’- are home to a variety of flora and fauna inhabiting the western ghats. Palakkad has industries situated close to the natural biodiversity hotspots, effluents of which harm the delicate balance.
- 
-Problem statement: You will be given the statistical study of pollutants released in the air by the factories working around the transit campus of IIT Palakkad and you are tasked to find an appropriate solution which is scientifically plausible and economically viable to help ameliorate the situation. 
                             </span>
                        
                  <!--           <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -1724,19 +1427,49 @@ Problem statement: You will be given the statistical study of pollutants release
         <div id="myModal_iu" class="modal">
             <!-- Modal content Petrichor-->
             <!-- rc ic -->
+            <br>
             <div class="modal-content">
+                <br><br>
                 <span class="close" onclick="closey_iu()">&times;</span>
                
+               <div style="width:100%;float:left; color: #DBCF22" class="event_info">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div> </a>
+                    <br>
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div></a>
+                    <br>
+                    <div style="width:100%;float:left;margin-top:-50px">
+                        <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <br>
+               
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                          
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                          <br>
                                 Are you crazy about cars that go beyond the limits, and crazier still about the engines that achieve the improbable? Then this is the event your participation will be worth it all.
-Petrichor presents to you the RC IC Engine Nitro Rally, where a meandering track will test your car’s speed along overwhelming curves and hurdles.
+Petrichor presents to you the RC IC Engine Nitro Rally, where a meandering track will test your car’s speed along overwhelming curves and hurdles. 
+
                             </span>
                        
                       <!--      <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -1769,16 +1502,18 @@ Petrichor presents to you the RC IC Engine Nitro Rally, where a meandering track
         <div id="myModal_ib" class="modal">
             <!-- Modal content Petrichor-->
             <!-- pirate battle -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_ib()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1786,25 +1521,25 @@ Petrichor presents to you the RC IC Engine Nitro Rally, where a meandering track
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
-                <div style="width:100%;">
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                         
-                                For all the robot enthusiasts who are acolytes of marine warfare, nothing can be as much fun as a mid-water battle between bots. Presenting Pirate Battle, another of Petrichor's bot-based contest, where the teams fight it out with their robots toughing it out in the water. Only time will tell as to who sinks beneath, and who remains afloat. 
-Participate right away to be a dreadful force in this exciting battlefield for aquatic bots to fight on water, to defend and to rob the enemies. 
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                         <br>
+                                For all the robot enthusiasts who are acolytes of marine warfare, nothing can be as much fun as a mid-water battle between bots. Presenting Pirate Battle, another of Petrichor's bot-based contest, where the teams fight it out with their robots toughing it out in the water. Only time will tell as to who sinks beneath, and who remains afloat. Participate right away to be a dreadful force in this exciting battlefield for aquatic bots to fight on water, to defend and to rob the enemies.  
 
                             </span>
                        
@@ -1838,16 +1573,18 @@ Participate right away to be a dreadful force in this exciting battlefield for a
         <div id="myModal_it" class="modal">
             <!-- Modal content Petrichor-->
             <!-- droneship -->
+            <br>
             <div class="modal-content">
+                <br><br>
                 <span class="close" onclick="closey_it()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1855,24 +1592,27 @@ Participate right away to be a dreadful force in this exciting battlefield for a
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                           
-                                An event like no other, Droneship is where drones will be pitted against one another in a race against time to earn the coveted glory. All you need is to fabricate drones that have it in them to pass through various obstacles while performing payload task in minimum time. Unmatched speed, nonpareil power, and intelligent controls are what will set the victor apart in this mid-air fury.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                           <br>
+                                One of its kind robotic competition, Robo Games is where skills meet passion. Divided into two rounds, each round more arduous than the last, the event seeks dexterity that can sail through the tasks. This event involves two wired bots coordinating with each other to play and defeat in soccer and coordination race, all at the same time.
+
                             </span>
                        
                        <!--     <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -1905,16 +1645,18 @@ Participate right away to be a dreadful force in this exciting battlefield for a
         <div id="myModal_ic" class="modal">
             <!-- Modal content Petrichor-->
             <!-- competitive coding -->
+            <br>
             <div class="modal-content">
+                <br><br>
                 <span class="close" onclick="closey_ic()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -1922,27 +1664,30 @@ Participate right away to be a dreadful force in this exciting battlefield for a
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Onsite Event Date: 19 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
-                    <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
+ <br>                   <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                            
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+     <br>                       
                                 If algorithms excite you, hard problems turn you into an insomniac, you write robust, efficient code, and you won’t stop until you get an AC to that problem, then you’re at the right place!
 We have got the perfect platform for sport coders like you and your team to showcase your mastery in problem-solving, algorithmic thinking, speed, and programming proficiency.
 Push your limits and challenge yourself to compete amongst the fastest and smartest.
 Dive into problems that will leave you craving for more!
+
+
 
                             </span>
                        
@@ -1980,7 +1725,7 @@ Dive into problems that will leave you craving for more!
 										    <div style="width:100%;float:left;" class="event_info">
 											  <div class="box" style="width:40%">
 
-												<img class="box__img box__img--original" src="img/Fashion and Fine arts/HC.jpg" alt="Some image" />
+												<img class="box__img box__img--original" src="" alt="Some image" />
 												<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-fashion-and-fine-arts#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 												<h4 class="box__text"><span class="box__text-inner title_event">Haute Couture</span></h4>
 												<!--<div class="box__deco">&#10014;</div>-->
@@ -2044,8 +1789,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:100%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Fashion and Fine arts/ThriftyThreads_s.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-fashion-and-fine-arts#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Thrifty Threads</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2107,8 +1852,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:100%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Fashion and Fine arts/Hysteria.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-fashion-and-fine-arts#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="h" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Hys-tee-ria!</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2164,8 +1909,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:100%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Fashion and Fine arts/RelayRangoli2.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-fashion-and-fine-arts#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Relay Rangoli</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2229,8 +1974,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:100%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Fashion and Fine arts/HC.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-fashion-and-fine-arts#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Life in Technicolor</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2292,8 +2037,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:100%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Lits and Quizzes/kissa kaviyon ka 2.jpeg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="">Register</span></a></h3>
 										<a href="#0" style="z-index:10000">
 										    <h4 class="box__text"><span class="box__text-inner title_event">Kissa Kaviyon Ka</span></h4>
 										</a>
@@ -2355,8 +2100,8 @@ Dive into problems that will leave you craving for more!
 								    <div style="width:40%;float:left;" class="event_info">
 									  <div class="box" style="width:40%">
 
-										<img class="box__img box__img--original" src="img/Lits and Quizzes/ quiz 2.jpeg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<img class="box__img box__img--original" src="img/Lits" alt="Some image" />
+										<h3 class="box__title--bottom reg_hover"><a href="">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2412,7 +2157,7 @@ Dive into problems that will leave you craving for more!
 									  <div class="box" style="width:40%">
 
 										<img class="box__img box__img--original" src="img/Lits and Quizzes/Get Sp-ent 1.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Get Sp-Ent !</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2469,7 +2214,7 @@ Dive into problems that will leave you craving for more!
 									  <div class="box" style="width:40%">
 
 										<img class="box__img box__img--original" src="img/Lits and Quizzes/JAM 2.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">JAM</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2526,7 +2271,7 @@ Dive into problems that will leave you craving for more!
 									  <div class="box" style="width:40%">
 
 										<img class="box__img box__img--original" src="img/Lits and Quizzes/tug of words 2.jpg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Tug-of-words</span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2584,7 +2329,7 @@ Dive into problems that will leave you craving for more!
 									  <div class="box" style="width:40%">
 
 										<img class="box__img box__img--original" src="img/Lits and Quizzes/kissa kaviyon ka 2.jpeg" alt="Some image" />
-										<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-lits-and-quizzes#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+										<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 										<h4 class="box__text"><span class="box__text-inner title_event">Action Packed </span></h4>
 										<!--<div class="box__deco">&#10014;</div>-->
 									  </div>
@@ -2636,17 +2381,18 @@ Dive into problems that will leave you craving for more!
         <div id="myModal_lc" class="modal">
             <!-- Modal content -->
             <!-- recraft -->
-            
+            <br>
             <div class="modal-content">
+                <br><br>
                 <span class="close" onclick="closey_lc()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2654,23 +2400,23 @@ Dive into problems that will leave you craving for more!
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
-                <div style="width:100%;">
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0">
                         
-                        <div id="Londonlc" class="w3-container city" style="overflow: auto; height:60vh; text-align:center">
-                           <span style="font-family: 'Helvetica', cursive; font-size:20px;">
-                                Recraft is a dual stage competition involving active out of the box thinking for designing circuits and general knowledge. 
-The first round will be a quiz based on the theme “How stuff works” in electrical engineering.
-The second round entails use to use your pre requisite knowledge on some circuits and their design to further modify or debug the given circuits.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                            <br>
+                              Recraft is a dual stage competition involving active out of the box thinking for designing circuits and general knowledge. The quiz will be based on the theme “How stuff works” in electrical engineering. It entails  to use pre requisite knowledge on some circuits and their design to further modify or debug the given circuits.
 
                             </span>
                         </div>
@@ -2691,19 +2437,149 @@ The second round entails use to use your pre requisite knowledge on some circuit
                 </div>
             </div>
         </div>
+        
+        
+        <div id="myModal_lc1" class="modal">
+            <!-- Modal content -->
+            <!-- recraft -->
+            <br>
+            <div class="modal-content">
+                <br><br>
+                <span class="close" onclick="closey_lc1()">&times;</span>
+                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div> </a>
+                    <br>
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div></a>
+                    <br>
+                    <div style="width:100%;float:left;margin-top:-50px">
+                        <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div style="width:100%;"><br>
+                    <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0">
+                        
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                            <br>
+                             Soldering is an essential component of hands on experience of being an electrical engineer. Whether it's to prototype circuits or building circuits during pass time hobby, soldering sure is a  skill worthy to be honed. Petrichor gives you a chance to display your prowess in soldering intricate and challenging circuits.
+
+                            </span>
+                        </div>
+                <!--        <div id="Parislc" class="w3-container city" style="display:none; overflow: auto; height:60vh; font-size:16px;font-family: 'Raleway', sans-serif;">
+                            <br /><br />
+                            <br /><br />1. This is an individual event.
+                            <br />2. The format and the rules of the same will be announced on spot.
+                            <br />3. Each participant needs to rethink a clasic tale allotted to him/her by incorporating in the original storyline one emotion given to him/her. The emotion may be incorporated in any character's personality trait, storyline, climax, ending or in any other manner ensuring that the emotion is evident.
+                            <br />4. The decision of the judges and organizers shall be final and binding.
+                            <br />5. Both online and on-the-spot registrations are allowed.
+                        </div>
+                        <div id="Tokyolc" class="w3-container city" style="display:none; overflow: auto; height:60vh;font-size:16px">
+                            <br />No Shortlisting round
+                        </div> -->
+                    </div>
+                    <!--<p class="overlay__content" style="font-size: 1em;width:100%">
+                    </p>-->
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="myModal_lc2" class="modal">
+            <!-- Modal content -->
+            <!-- recraft -->
+            <br>
+            <div class="modal-content">
+                <br><br>
+                <span class="close" onclick="closey_lc2()">&times;</span>
+                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div> </a>
+                    <br>
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
+                        <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
+                        
+                        <!--<div class="box__deco">&#10014;</div>-->
+                    </div></a>
+                    <br>
+                    <div style="width:100%;float:left;margin-top:-50px">
+                        <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div style="width:100%;"><br>
+                    <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0">
+                        
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                            <br>
+                              In today's world of digital circuits, hardware description languages play a very important role in circuit designing and prototyping. The industry offers several exciting positions to people who specialise in these areas. Though the trend had shifted away from these in the recent times by big data, ML and AI, hardware description languages still play a very important role in the industry and now is soon picking up its lost trend.
+Petrichor is here to help you develop your skills and interest in Verilog. The Verilog coding competition is aimed at attracting young talents to venture into this area and explore this immense field of opportunities. So what are you waiting for ? Come join us in this learning. 
+
+
+                            </span>
+                        </div>
+                <!--        <div id="Parislc" class="w3-container city" style="display:none; overflow: auto; height:60vh; font-size:16px;font-family: 'Raleway', sans-serif;">
+                            <br /><br />
+                            <br /><br />1. This is an individual event.
+                            <br />2. The format and the rules of the same will be announced on spot.
+                            <br />3. Each participant needs to rethink a clasic tale allotted to him/her by incorporating in the original storyline one emotion given to him/her. The emotion may be incorporated in any character's personality trait, storyline, climax, ending or in any other manner ensuring that the emotion is evident.
+                            <br />4. The decision of the judges and organizers shall be final and binding.
+                            <br />5. Both online and on-the-spot registrations are allowed.
+                        </div>
+                        <div id="Tokyolc" class="w3-container city" style="display:none; overflow: auto; height:60vh;font-size:16px">
+                            <br />No Shortlisting round
+                        </div> -->
+                    </div>
+                    <!--<p class="overlay__content" style="font-size: 1em;width:100%">
+                    </p>-->
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
         <div id="myModal_ld" class="modal">
             <!-- Modal content -->
             <!-- techexpo -->
             <div class="modal-content">
                 <span class="close" onclick="closey_ld()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2714,8 +2590,8 @@ The second round entails use to use your pre requisite knowledge on some circuit
                             <br /> You won!
                             <br /> Event Date 
                             <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
@@ -2724,7 +2600,7 @@ The second round entails use to use your pre requisite knowledge on some circuit
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0">
                         
                         <div id="Londonld" class="w3-container city" style="overflow: auto; height:60vh; text-align:center">
-                           <span style="font-family: 'Helvetica', cursive; font-size:20px;">
+                           <span style="font-family: 'Cabin Sketch', cursive; font-size:20px;">
                                 Want your project to be displayed on a higher level ? Petrichor can help you get your project noticed by researches, mentors and prominent industrialists. This would boost your outreach and you would help you gain active feedback from the leaders in the society. Petrichor TechExpo features several projects of high standards, thus, being a part of this venture will surely be a learning curve to all.
 
                             </span>
@@ -2752,13 +2628,13 @@ The second round entails use to use your pre requisite knowledge on some circuit
             <div class="modal-content">
                 <span class="close" onclick="closey_lw()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2769,8 +2645,8 @@ The second round entails use to use your pre requisite knowledge on some circuit
                             <br /> You won!
                             <br /> Event Date 
                             <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
@@ -2783,7 +2659,7 @@ The second round entails use to use your pre requisite knowledge on some circuit
                             <button class="w3-bar-item w3-button" onclick="openCity('Tokyolw',this)">Shortlisting Round</button>
                         </div>
                         <div id="Londonlw" class="w3-container city" style="overflow: auto; height:60vh; text-align:center">
-                           <span style="font-family: 'Helvetica', cursive; font-size:20px;">
+                           <span style="font-family: 'Cabin Sketch', cursive; font-size:20px;">
                                 A fun online event, Treasure Hunt looks for your ability to venture into a befuddling treasure hunt and wield your intelligence to decode clues that lead to the holy grail. Make sure that you have a faithful internet connection as your companion throughout the hunt.
 The event will start a week before the fest and the winner will be decided according to the standings on a leader pool.
 
@@ -2811,16 +2687,18 @@ The event will start a week before the fest and the winner will be decided accor
         <div id="myModal_dn" class="modal">
             <!-- Modal content Petrichor-->
             <!-- retrofitting -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_dn()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2828,24 +2706,28 @@ The event will start a week before the fest and the winner will be decided accor
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020  
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
-                <div style="width:100%;">
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                          
-                                Can you propose novel innovative solutions for issues in heritage buildings? If you can incorporate the modern to the ancient, then this is your golden opportunity! Don't hesitate to grab it.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                          <br>
+                                The Indian History belongs to both the victor and the vanquished. Monuments spread out across the length and breadth of the nation are architectural testimonies to its diverse cultural history, a heritage that speaks of our glorious past. 
+Can you propose novel innovative solutions for issues in heritage buildings? If you can incorporate the modern to the ancient, then this is your golden opportunity! 
+Don't hesitate to grab it.
+
                             </span>
                        
              <!--               <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -2877,16 +2759,18 @@ The event will start a week before the fest and the winner will be decided accor
         <div id="myModal_dc" class="modal">
             <!-- Modal content Petrichor-->
             <!-- design modelling -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_dc()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2894,26 +2778,27 @@ The event will start a week before the fest and the winner will be decided accor
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 17-18 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
-                <div style="width:100%;">
+                <div style="width:100%;"><br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                        
-                                ROPEWAY MODELLING : <br>
-Beyond the obvious, different from the pack, the ​Ropeway Modelling competition looks for a design that redefines the boundaries of your thinking box.
-A ropeway is a device used to transcend the difficulties of crossing rivers and ravines alike. I​n this event the participant will have to design a ropeway and make a model thereof. The ropeway should be able enough to carry the loads on it.
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                        <br>
+                               Having an idea is, in itself, a thing, but even greater is to transform the idea into a representation. Make your imagination a reality and present to us your solution in <name of the event. A modelling competition to design and enlighten. Test your limits and break them with Petrichor !
+
+
 
                             </span>
                        
@@ -2946,16 +2831,18 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
         <div id="myModal_dr" class="modal">
             <!-- Modal content Petrichor-->
             <!-- civil software -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_dr()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -2963,24 +2850,28 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-                            	
-                                For all the modelling aces out there, here’s your chance to design our campus! Bring out the artist in you and carve your imagination on the screen
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+                            	<br>
+A civil engineer sees each building as an engineered composition of several entities, from its inception to the final structure. Bring out the passionate civil engineer in you and get ready to brush up your basics as we present to you, Rivil It!!
+
+
                             </span>
                        
                     <!--        <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -3015,13 +2906,13 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
             <div class="modal-content">
                 <span class="close" onclick="closey_dt()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #3EDB22; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -3032,8 +2923,8 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                             <br /> You won!
                             <br /> Event Date 
                             <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
@@ -3044,7 +2935,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                          
                         </div>
                         <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
                            
                                 In this intense competition, manual bots with hydraulic arms race against each other on a variety of terrain, and against time, to win the flag.  A fight like no other that demands prowess in robotics and hydraulics, this is an event not to be missed.
                             </span>
@@ -3079,16 +2970,18 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
         <div id="myModal_mbr" class="modal">
             <!-- Modal content Petrichor-->
             <!-- kerala challenge -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_mbr()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -3096,24 +2989,26 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
-
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+<br>
                                 As gratitude to Kerala and its people, this event is for all those minds to own who can come up with innovative solutions to a multitude of problems faced by the people of the state. One of those events where everyone can participate in, out-of-the-box  ideas is what will see you through to victory in the Kerala Challenge.
+
                             </span>
                        
                <!--             <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -3144,16 +3039,18 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
         <div id="myModal_ma" class="modal">
             <!-- Modal content Petrichor-->
             <!-- startup showcase -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_ma()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -3161,24 +3058,27 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 19 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+<br>
+                                If entrepreneurial ideas are the currency of your thought we encourage you to bring them to fruition. Startup Showcase is an open-to-all platform for aspiring entrepreneurs to pitch their start-up ideas and prove the worth of their thoughts.
 
-                                If entrepreneurial ideas are the currency of your thought we encourage you to bring them to fruition. Startup Showcase is an open-to-all platform for aspiring entrepreneurs to pitch in their start-up ideas and prove the worth of their thoughts.
                             </span>
                        
                  <!--           <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -3210,16 +3110,18 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
         <div id="myModal_mb" class="modal">
             <!-- Modal content Petrichor-->
             <!-- ideathron -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_mb()">&times;</span>
                 <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -3227,24 +3129,28 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020 
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
+                            <br />
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width:100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+<br>We live in a world that endlessly strives for a better tomorrow. But for that leap to be realized, ideas that break the shackles of imagination are what this world counts upon. If you are one of those who believe they can birth such ideas then participate right away in Ideathon.
+ 
 
-                                We live in a world that endlessly strives for a better tomorrow. But for that leap to be realized, ideas that break the shackles of imagination are what this world counts upon. If you are one of those who believe they can birth such ideas then participate right away in Ideathron.
+
                             </span>
                        
                       <!--      <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -3277,16 +3183,18 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
         <div id="myModal_mn" class="modal">
             <!-- Modal content Petrichor-->
             <!-- socialpreneur -->
+            <br>
             <div class="modal-content" >
+                <br><br>
                 <span class="close" onclick="closey_mn()">&times;</span>
                  <div style="width:100%;float:left; color: #DBCF22" class="event_info">
-                   <a href=""> <div class="box" style=" width:40%; color: #3EDB22; ">
+                   <a href="/coming_soon"> <div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Register</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
                     </div> </a>
                     <br>
-                    <a href=""><div class="box" style=" width:40%; color: #3EDB22; ">
+                    <a href="/coming_soon"><div class="box" style=" width:40%; color: #0ff; ">
                         <h4 class="box__text"><span class="box__text-inner title_event">Rules</span></h4>
                         
                         <!--<div class="box__deco">&#10014;</div>-->
@@ -3294,24 +3202,26 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
                     <br>
                     <div style="width:100%;float:left;margin-top:-50px">
                         <p style="font-family: 'Helvetica', cursive; font-size:15px;margin-left:5vw">
-                            <br /> You won!
-                            <br /> Event Date 
-                            <br /> Contact::
-                            <br /> A: +91
-                            <br /> B: +91
+                            <br /> 
+                            <br /> Event Date: 18 January, 2020
+                            <br /> Contact Details::
+                            <br /> Aakash: +91-7898602223
+                            <br /> Muskaan: +91-9079838450
                         </p>
                     </div>
                 </div>
                 <br>
                 <div style="width100%;">
+                <br>
                     <div class="overlay__content" ; style="width:100%;margin-left:0;padding-left:0" id="bc">
                         <div  style="font-size:small" id="mc">
                          
                         </div>
-                        <div id="Londondge" class="w3-container city" style="color: #DB2242; overflow: auto; height:60vh; text-align:left">
-                            <span style="font-family: 'Helvetica', cursive; font-size:20px">
+                        <div id="Londondge" class="w3-container city" style="color: #fff; overflow: auto; height:60vh; text-align:left">
+                            <span style="font-family: 'Cabin Sketch', cursive; font-size:20px">
+				<br>
+                               In this intense competition of weight lifting, build a robotic arm to race against time, to pick and place and to win the flag.  A fight like no other that demands prowess in robotics, this is an event not to be missed.
 
-                                Socialpreneur is an event that lends you an opportunity to pay something back to the society. Open for all, this event rewards the non-profit making business ideas (or hybrid thereof) that contribute to the betterment of the society.
                             </span>
                        
                       <!--      <span style="font-family: 'Helvetica', cursive; font-size:20px"> 
@@ -3351,7 +3261,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 										  <div class="box" style="width:40%">
 
 											<img class="box__img box__img--original" src="img/Music/Pitch Please!.jpg" alt="Some image" />
-											<h3 class="box__title--bottom reg_hover"><a href="https://www.thecollegefever.com/events/-19-music#openticket" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+											<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 											<h4 class="box__text"><span class="box__text-inner title_event">Pitch Please!</span></h4>
 											<!--<div class="box__deco">&#10014;</div>-->
 										  </div>
@@ -3396,7 +3306,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 											</div>
 											<div id="Tokyomp" class="w3-container city" style="display:none; overflow: auto; height:60vh;font-size:16px;font-family: 'Raleway', sans-serif;">
 											    <br />1. Participants must register on the website latest by Jan 20, 2019. This would generate a ticket ID which is mandatorily required to submit entries for the shortlisting round.
-											    <br /><br />2. Participants are required to submit entries on <a href="https://goo.gl/forms/SkI8a655SR7DMlFl2" target="_blank" style="color:red">this link</a> using the ticket ID mentioned above, latest by Jan 20, 2019.
+											    <br /><br />2. Participants are required to submit entries on <a href="" target="_blank" style="color:red">this link</a> using the ticket ID mentioned above, latest by Jan 20, 2019.
 											    <br /><br />3. All general rules relating to the performance also apply to the pieces submitted in the shortlisting round.
 											</div>
 										  </div>
@@ -3417,7 +3327,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 										  <div class="box" style="width:40%">
 
 											<img class="box__img box__img--original" src="img/Online/Shutter Story.jpg" alt="Some image" />
-											<h3 class="box__title--bottom reg_hover"><a href="https://goo.gl/forms/A0x1hQt7YufpVQbc2" target="_blank"><span class="box__title-inner-s">Submit</span></a></h3>
+											<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s">Submit</span></a></h3>
 											<a href="#0" style="z-index:10000">
 											    <h4 class="box__text"><span class="box__text-inner title_event">Shutter Story</span></h4>
 											</a>
@@ -3449,7 +3359,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 											</div>
 											<div id="Parisos" class="w3-container city" style="display:none; overflow: auto; height:60vh; font-size:16px;font-family: 'Raleway', sans-serif;">
 											    <br />1. This is an individual event.
-											    <br />2. All participants will be given a photograph based on the theme ""The Hues of Hysteria"". The participants are required to interpret the picture and write a 30 word story based on the picture. Participants may submit their entries <a href="https://goo.gl/forms/A0x1hQt7YufpVQbc2" targte="_blank" style="color:red">here</a>.
+											    <br />2. All participants will be given a photograph based on the theme ""The Hues of Hysteria"". The participants are required to interpret the picture and write a 30 word story based on the picture. Participants may submit their entries <a href="" targte="_blank" style="color:red">here</a>.
 											    <br /> 3. The picture will be released with the story on our social media page and the picture with the maximum likes on our Fcaebook page will win.
 											    <br />4. The decision of the judges and organizers shall be final and binding."
 											</div>
@@ -3525,7 +3435,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 										  <div class="box" style="width:40%">
 
 											<img class="box__img box__img--original" src="img/Online/Alpha-hues.jpg" alt="Some image" />
-											<h3 class="box__title--bottom reg_hover"><a href="https://docs.google.com/forms/d/1ZgZU3cZegPTzgJIfo0LlxLMm3n87ZibJQyZ0-et_Ecs/edit" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
+											<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s reg_btn">Register</span></a></h3>
 											<a href="#0" style="z-index:10000">
 											    <h4 class="box__text"><span class="box__text-inner title_event">Alpha-hues</span></h4>
 											</a>
@@ -3558,7 +3468,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 											<div id="Parisoa" class="w3-container city" style="display:none; overflow: auto; height:60vh; font-size:16px;font-family: 'Raleway', sans-serif;">
 											    <br />1. This is an individual event.
 											    <br />2. A crossword puzzle would be given on the  Facebook Page and participants have to find name of colors hidden within it.
-											    <br />3. Participants need to submit their entries <a href="https://docs.google.com/forms/d/1ZgZU3cZegPTzgJIfo0LlxLMm3n87ZibJQyZ0-et_Ecs/edit" target="_blank" style="color:red">here</a>.
+											    <br />3. Participants need to submit their entries <a href="" target="_blank" style="color:red">here</a>.
 											    <br />4. Participant with the maximum number of correct colors wins.
 											    <br />5. In case of a tie, the participant who sent the entries earliest wins
 											    <br />6. The decision of the judges and organizers shall be final and binding.
@@ -3635,7 +3545,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 										  <div class="box" style="width:40%">
 
 											<img class="box__img box__img--original" src="img/Online/Word2Word3.png" alt="Some image" />
-											<h3 class="box__title--bottom reg_hover"><a href="https://www.facebook.com/.iimb/photos/a.268793656578859/1173640186094197/?type=3&theater" target="_blank"><span class="box__title-inner-s">Link to Facebook Post</span></a></h3>
+											<h3 class="box__title--bottom reg_hover"><a href="">Link to Facebook Post</span></a></h3>
 											<a href="#0" target="_blank" style="z-index:10000">
 											    <h4 class="box__text"><span class="box__text-inner title_event">Word to Word</span></h4>
 											</a>
@@ -3688,7 +3598,7 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 										  <div class="box" style="width:40%">
 
 											<img class="box__img box__img--original" src="img/Online/Virtual expedition .PNG" alt="Some image" />
-											<h3 class="box__title--bottom reg_hover"><a href="https://www.facebook.com/virtualtreasure/" target="_blank"><span class="box__title-inner-s">Facebook Page Link</span></a></h3>
+											<h3 class="box__title--bottom reg_hover"><a href="" target="_blank"><span class="box__title-inner-s">Facebook Page Link</span></a></h3>
 											<a href="#0" style="z-index:10000">
 											    <h4 class="box__text"><span class="box__text-inner title_event">Virtual Expedition</span></h4>
 											</a>
@@ -4088,6 +3998,28 @@ A ropeway is a device used to transcend the difficulties of crossing rivers and 
 
         function closey_lc() {
             document.getElementById('myModal_lc').style.display = "none";
+
+            document.body.style.overflow = 'scroll';
+            document.body.classList.remove('preview-open');
+        }
+        
+        function clicky_lc1() {
+            document.getElementById('myModal_lc1').style.display = "block";
+        }
+
+        function closey_lc1() {
+            document.getElementById('myModal_lc1').style.display = "none";
+
+            document.body.style.overflow = 'scroll';
+            document.body.classList.remove('preview-open');
+        }
+        
+        function clicky_lc2() {
+            document.getElementById('myModal_lc2').style.display = "block";
+        }
+
+        function closey_lc2() {
+            document.getElementById('myModal_lc2').style.display = "none";
 
             document.body.style.overflow = 'scroll';
             document.body.classList.remove('preview-open');
